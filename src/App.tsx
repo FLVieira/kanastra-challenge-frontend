@@ -4,6 +4,7 @@ import { Layout, NoMatch } from "./components";
 import { FileList, Upload } from "./pages";
 
 import 'react-toastify/dist/ReactToastify.css';
+import './global.css';
 import { makeServer } from "./mock/makeServer";
 
 if (process.env.NODE_ENV !== "production") {

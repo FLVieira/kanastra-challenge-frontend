@@ -17,7 +17,7 @@ export const FileContextInitialValues: FileContextState = {
   fileList: [],
 };
 
-const FileContext = createContext<FileContextType>({
+export const FileContext = createContext<FileContextType>({
   state: FileContextInitialValues,
   dispatch: () => null,
   uploadCharges: async () => undefined,

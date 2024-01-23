@@ -48,7 +48,7 @@ const SingleFileUploader = () => {
       )}
 
       {file && <button className="rounded-lg bg-green-800 text-white px-4 py-2 border-none font-semibold" onClick={handleUpload}>{isLoading ? (<Loading />) : 'Upload the file'}</button>}
-      {error && <span className="text-red px-4 py-2 font-semibold">{error.message}</span>}
+      {error && <span className="text-red-500 px-4 py-2 font-semibold">{error.message}</span>}
     </div>
   );
 };

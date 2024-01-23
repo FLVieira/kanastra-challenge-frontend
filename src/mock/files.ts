@@ -1,7 +1,7 @@
 import { ChargeFile } from '@/metadata/files';
 import { Response, Server } from 'miragejs';
 
-const fakeChargeFilesList: ChargeFile[] = [
+export const fakeChargeFilesList: ChargeFile[] = [
   {
     id: 'any_id1',
     name: "file1.csv",
@@ -55,7 +55,7 @@ const fakeChargeFilesList: ChargeFile[] = [
 ];
 
 export const mockChargeFilesRoutes = (server: Server) => {
-  server.get('/files/charges', () => {
+  server.get('/charges/files', () => {
     return new Response(200, {}, { data: fakeChargeFilesList });
   });
 

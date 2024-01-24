@@ -1,0 +1,16 @@
+name: Test the application
+
+on: [push]
+
+env:
+  IMAGE_TAG: kanastra_challenge_frontend
+
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun test
